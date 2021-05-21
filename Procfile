@@ -1,1 +1,1 @@
-web: env.sh && java -jar build/libs/dio-cities-api-0.0.1-SNAPSHOT.jar
+web: ./env.sh && java -jar build/libs/dio-cities-api-0.0.1-SNAPSHOT.jar
