@@ -41,27 +41,27 @@ public class State {
     State() {
     }
 
-    int getId() {
+    public int getId() {
         return id;
     }
 
-    String getName() {
+    public String getName() {
         return name;
     }
 
-    String getFu() {
+    public String getFu() {
         return fu;
     }
 
-    Integer getCountryId() {
+    public  Integer getCountryId() {
         return countryId;
     }
 
-    int getIbge() {
+    public int getIbge() {
         return ibge;
     }
 
-    List<Integer> getAreaCode() {
+    public List<Integer> getAreaCode() {
         return areaCode;
     }
 }

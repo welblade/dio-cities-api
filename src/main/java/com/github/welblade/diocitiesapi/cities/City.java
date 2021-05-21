@@ -32,35 +32,35 @@ public class City {
     City() {
     }
 
-    int getId() {
+    public int getId() {
         return id;
     }
 
-    String getName() {
+    public String getName() {
         return name;
     }
 
-    String getFu() {
+    public String getFu() {
         return fu;
     }
 
-    int getIbge() {
+    public int getIbge() {
         return ibge;
     }
 
-    String getCoordinate() {
+    public String getCoordinate() {
         return coordinate;
     }
 
-    double getLatitude() {
+    public double getLatitude() {
         return latitude;
     }
 
-    double getLongitude() {
+    public double getLongitude() {
         return longitude;
     }
 
-    int getCodTom() {
+    public int getCodTom() {
         return codTom;
     }
 }

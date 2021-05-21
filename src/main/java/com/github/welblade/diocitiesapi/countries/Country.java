@@ -26,23 +26,23 @@ public class Country {
 
     }
 
-    long getId() {
+    public long getId() {
         return id;
     }
 
-    String getName() {
+    public String getName() {
         return name;
     }
     
-    String getPortugueseName() {
+    public String getPortugueseName() {
         return portugueseName;
     }
 
-    String getAbbr() {
+    public String getAbbr() {
         return abbr;
     }
 
-    int getBacen() {
+    public int getBacen() {
         return bacen;
     }
 
