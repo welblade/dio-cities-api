@@ -20,8 +20,9 @@ public class CityDistanceResource {
 
     @GetMapping
     public ResponseEntity<Double> byCube(@RequestParam(name = "from") final Integer city1,
-                         @RequestParam(name = "to") final Integer city2) {
+                         @RequestParam(name = "to") final Integer city2) throws CityNotFoundException {
       log.info("byCube");
-      return ResponseEntity.ok().body(service.distance(city1, city2));
+      final Double response = service.distance(city1, city2);
+      return ResponseEntity.ok().body(response);
     }
 }
