@@ -17,6 +17,9 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation group: 'com.vladmihalcea', name: 'hibernate-types-52', version: '2.11.1'
+	// https://mvnrepository.com/artifact/org.springframework.data/spring-data-rest-webmvc
+	implementation group: 'org.springframework.data', name: 'spring-data-rest-webmvc', version: '3.5.1'
+
 	runtimeOnly 'org.postgresql:postgresql'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
