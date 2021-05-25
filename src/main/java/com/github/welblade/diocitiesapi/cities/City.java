@@ -5,9 +5,11 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.hateoas.RepresentationModel;
+
 @Entity
 @Table(name = "cidade")
-public class City {
+public class City extends RepresentationModel<City>{
     @Id
     private int id;
 
