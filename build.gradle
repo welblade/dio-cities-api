@@ -1,11 +1,11 @@
 plugins {
-	id 'org.springframework.boot' version '2.4.5'
+	id 'org.springframework.boot' version '2.5.3'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
 }
 
 group = 'com.github.welblade'
-version = '0.0.1-SNAPSHOT'
+version = '0.0.2-SNAPSHOT'
 sourceCompatibility = '11'
 
 
@@ -14,15 +14,15 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-hateoas'
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-hateoas:2.5.3'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.5.3'
+	implementation 'org.springframework.boot:spring-boot-starter-web:2.5.3'
 	implementation group: 'com.vladmihalcea', name: 'hibernate-types-52', version: '2.11.1'
 	// https://mvnrepository.com/artifact/org.springframework.data/spring-data-rest-webmvc
 	implementation group: 'org.springframework.data', name: 'spring-data-rest-webmvc', version: '3.5.1'
 
-	runtimeOnly 'org.postgresql:postgresql'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	runtimeOnly 'org.postgresql:postgresql:42.2.23.jre7'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test:2.5.3'
 }
 
 test {
